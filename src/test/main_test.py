@@ -9,7 +9,6 @@ bot: Bot = Bot(API_TOKEN)
 dsp: Dispatcher = Dispatcher()
 
 
-
 dsp.message.register(process_start, Command(commands=['start']))
 dsp.message.register(process_photo, F.content_type == ContentType.PHOTO)
 dsp.message.register(process_mes)
